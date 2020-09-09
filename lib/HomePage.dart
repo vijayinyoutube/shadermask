@@ -24,8 +24,6 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Image.asset(
                 "assets/images/Flutter.png",
                 fit: BoxFit.cover,
-                // width: 100,
-                // height: 100,
               ),
             ),
           ),
