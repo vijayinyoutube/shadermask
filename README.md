@@ -13,3 +13,7 @@
 
 A demonstration regarding the ```Shader Mask``` Widget in Flutter
 
+To know more awesome content about Flutter., 
+
+Visit my channel 👉 : https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ
+
