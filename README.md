@@ -1,16 +1,8 @@
 # shadermask
 
-A new Flutter project.
+[![BUILD](https://img.shields.io/badge/Build-OK-<COLOR>.svg)](https://github.com/vijayinyoutube/shadermask)  [![vijaycreations](https://img.shields.io/website-up-vijaycreations-green-orange/http/cv.lbesson.qc.to.svg)](https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ) [![Repo Status](https://img.shields.io/badge/RepoStatus-Active-blue.svg)](https://github.com/vijayinyoutube/shadermask) [![MIT license](https://img.shields.io/badge/License-MIT-red.svg)](https://github.com/vijayinyoutube/shadermask) [![Flutter](https://img.shields.io/badge/Built_using-Flutter-blue.svg)](https://github.com/vijayinyoutube/shadermask)
 
-## Getting Started
+## App 
 
-This project is a starting point for a Flutter application.
+A demonstration regarding the ```Shader Mask``` Widget in Flutter
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
