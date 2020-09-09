@@ -9,21 +9,24 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: ShaderMask(
-          shaderCallback: (bounds) {
-            return LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Colors.black, Colors.red]).createShader(bounds);
-          },
-          blendMode: BlendMode.color,
-          child: Container(
-            width: double.infinity,
-            height: double.infinity,
-            child: Image.asset(
-              "images/Flutter.png",
-              fit: BoxFit.cover,
+      body: Container(
+        color: Colors.grey,
+        child: Center(
+          child: ShaderMask(
+            shaderCallback: (bounds) {
+              return LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Colors.red, Colors.blue]).createShader(bounds);
+            },
+            blendMode: BlendMode.color,
+            child: Container(
+              child: Image.asset(
+                "assets/images/Flutter.png",
+                fit: BoxFit.cover,
+                // width: 100,
+                // height: 100,
+              ),
             ),
           ),
         ),
