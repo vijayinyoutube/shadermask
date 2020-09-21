@@ -10,7 +10,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Color pickerColor = Color(0xff443a49);
   Color currentColor = Color(0xff443a49);
-
+  double myvalue = 150.0;
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
@@ -66,33 +66,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     ? const Color(0xffffffff)
                     : const Color(0xff000000),
               ),
-              // Container(
-              //   child: Expanded(
-              //     child: ListView(
-              //       scrollDirection: Axis.horizontal,
-              //       children: [
-              //         Row(
-              //           children: <Widget>[
-              //             for (int i = 0; i < 10; i++)
-              //               GestureDetector(
-              //                 onTap: () {
-              //                   setState(() {
-              //                     //  iconselected = i;
-              //                   });
-              //                 },
-              //                 child: Container(
-              //                   width: 40,
-              //                   child: Icon(Icons.add),
-              //                 ),
-              //               ),
-              //           ],
-              //         ),
-              //       ],
-              //     ),
-              //   ),
-              // ),
               ShaderMask(
-                shaderCallback: (rect) {
+                shaderCallback: (bound) {
                   Image.asset(
                     "assets/images/Flutter.png",
                     color: Colors.blue,
@@ -102,17 +77,32 @@ class _MyHomePageState extends State<MyHomePage> {
                     begin: Alignment.centerLeft,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.transparent,
-                      Colors.transparent,
+                      (Color.fromRGBO(myvalue.toInt(), myvalue.toInt(),
+                          myvalue.toInt(), 0.8)),
+                      (Color.fromRGBO(myvalue.toInt(), myvalue.toInt(),
+                          myvalue.toInt(), 0.8)),
                     ],
-                  ).createShader(rect);
+                  ).createShader(bound);
                 },
-                blendMode: BlendMode.dst,
+                blendMode: BlendMode.colorBurn,
                 child: Image.asset(
                   "assets/images/FlutterLogo.png",
-                  //  BlendMode.darken,
                   fit: BoxFit.cover,
                 ),
+              ),
+              Slider(
+                activeColor: Colors.white,
+                inactiveColor: Colors.grey,
+                value: myvalue,
+                max: 255,
+                onChanged: (double value) {
+                  setState(() {
+                    //seekToSecond(value.toInt());
+
+                    value = value;
+                    myvalue = value;
+                  });
+                },
               ),
               Image.asset(
                 "assets/images/FlutterLogo.png",
